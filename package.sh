@@ -23,11 +23,6 @@ cp -r references/ "$TARGET/references/"
 cp SKILL.md "$TARGET/"
 cp README.md "$TARGET/"
 cp CHANGELOG.md "$TARGET/"
-cp LICENSE "$TARGET/"
-cp VERSION "$TARGET/"
-cp .env.example "$TARGET/"
-cp .gitignore "$TARGET/"
-cp screenshot.png "$TARGET/"
 
 # Clean unwanted files from dist
 find "$TARGET" -name '__pycache__' -type d -exec rm -rf {} + 2>/dev/null || true
